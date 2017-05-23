@@ -169,5 +169,6 @@ knex('clients.thigh').insert({user_id: user, thigh: measurement, date: new Date(
 });
 
 //this is where endpoints for updating client information will soon go
+//and other really cool shit
 
 module.exports = router;

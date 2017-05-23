@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Science Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link href="/hamburger.css" rel="stylesheet" type="text/css">
+
+    {{{styles}}}
+  </head>
+  <header>
+  {{>userinfo}}
+      <button class="hamburger hamburger--collapse" type="button">
+	  <span class="hamburger-box">
+	      <span class="hamburger-inner"></span>
+	  </span>
+      </button>
+  </header>    
+  <body>
+	  <ul class="menu">
+	      <a href="/"><li>Home</li></a>
+	      <a href="/login"><li>Log in</li></a>
+	      <a href="/register"><li>Register</li></a>
+	      <a href="/dashboard"><li>Dashboard</li></a>
+	      <a href="/contact"><li>Contact</li></a>
+	  </ul>
+      {{{body}}}
+      {{{scripts}}}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="/js/burger.js"></script>
+  </body>
+</html>

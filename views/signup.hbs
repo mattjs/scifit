@@ -1,0 +1,31 @@
+{{# if success }}
+    <section class="success">
+	<h2>Successful registration!</h2>
+	<p>Welcome to Sci-Fit</p>
+	<p>Click <a href="../login">here</a> to log in</p>
+    </section>
+{{else}}
+    {{# if errors }}
+	<section class ="errors">
+	    <ul>
+		{{# each errors }}
+		    <li>{{ this.msg }}</li>
+		    {{/each}}
+	    </ul>
+	</section>
+{{/if}}
+<div class="form">
+    <form action ="" method="post" class="register-form">
+	<input type="text" placeholder="username" name="user"/>
+	<input type="password" placeholder="password" name="password"/>
+	<input type="password" placeholder="confirm password" name="confirmPassword"/>
+	<input class="gender" type="radio" name="gender" value="male">
+	<label class="radio-label">Male</label>
+
+    <input class="gender" type="radio" name="gender" value="female">Female<br><br>
+	<button>create</button>
+	<p class="message">Already registered? <a href="/login">Sign In</a></p>
+    </form>
+</div>
+{{/if}}   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

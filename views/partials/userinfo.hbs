@@ -1,0 +1,11 @@
+{{# if user }}
+	<span class="userinfo">
+	<p class="currentuser">{{user}}  <span class="divider">|</span></p>
+	<p class="logout"> <a href="/logout">Log out</a></p>
+</span>
+
+{{else}}
+<span class="userinfo">
+<p class="login"><a href="/login">Log in</a></p>
+</span>
+{{/if}}

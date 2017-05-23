@@ -1,0 +1,27 @@
+
+{
+  "name": "express1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "chart.js": "^2.2.1",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.0",
+    "express-validator": "^2.20.8",
+    "handlebars": "^4.0.5",
+    "jquery": "^1.12.4",
+    "knex": "^0.11.10",
+    "pg": "^6.0.3",
+    "scrypt-for-humans": "^2.0.5",
+    "underscore": "^1.8.3"
+  }
+}
